@@ -1,7 +1,5 @@
-﻿from django.conf import settings
-from django.conf.urls.static import static
-from django.contrib.staticfiles.views import serve
-from django.urls import path
+﻿from django.urls import path
+from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -10,8 +8,3 @@ urlpatterns = [
     path('thanks/', views.thanks, name='thanks'),
     path('send-request/', views.send_request, name='send_request'),
 ]
-
-if not settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-else:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
