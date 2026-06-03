@@ -1,0 +1,96 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Наши клиенты - ГК "Комплексные Системы Безопасности"{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="section-title">Наши клиенты</h1>
+    
+    <div class="card p-4 mb-5 text-center">
+        <p class="lead mb-0">За время деятельности нашими Заказчиками были и остаются по настоящее время:</p>
+    </div>
+    
+    <div class="row">
+        <!-- Промышленность и производство -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-white border-0 pt-4">
+                    <h3 style="color: #8B1A1A;"><i class="fas fa-industry"></i> Промышленность и производство</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ООО «Торжокские Золотошвеи»</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>Тверская швейная фабрика</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>Мир кровли</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТКСиТ</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Торговые центры -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-white border-0 pt-4">
+                    <h3 style="color: #8B1A1A;"><i class="fas fa-shopping-mall"></i> Торговые центры</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТЦ Фэктори</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТЦ Пирамида</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТРЦ Рубин 1</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТРЦ Рубин 2</strong></li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ТЦ Восток</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Телеком и энергетика -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-white border-0 pt-4">
+                    <h3 style="color: #8B1A1A;"><i class="fas fa-bolt"></i> Энергетика и связь</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>МРСК</strong> (Межрегиональная распределительная сетевая компания)</li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>Ростелеком</strong> (г. Санкт-Петербург)</li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>МТС</strong> (Мобильные ТелеСистемы)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Прочие организации -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header bg-white border-0 pt-4">
+                    <h3 style="color: #8B1A1A;"><i class="fas fa-building"></i> Крупные организации</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>ВНИИС</strong> (г. Москва)</li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>МОСЗ</strong> (г. Москва)</li>
+                        <li><i class="fas fa-check-circle" style="color: #8B1A1A;"></i> <strong>Архив новейшей истории</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Итоговый блок -->
+    <div class="bg-light p-4 rounded mt-4 text-center">
+        <h4 style="color: #8B1A1A;"><i class="fas fa-star-of-life"></i> И еще более 1000 клиентов!</h4>
+        <p class="mt-2">Наша организация имеет благодарственные письма от Заказчиков и от контролирующих органов.</p>
+        <div class="mt-3">
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+        </div>
+    </div>
+</div>
+{% endblock %}

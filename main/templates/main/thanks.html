@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Спасибо за заявку{% endblock %}
+
+{% block content %}
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <div class="card p-5">
+                <i class="fas fa-check-circle fa-5x" style="color: #8B1A1A;"></i>
+                <h1 class="mt-4" style="color: #8B1A1A;">Заявка отправлена!</h1>
+                <p class="lead mt-3">Спасибо за обращение в ГК "Комплексные Системы Безопасности".</p>
+                <p>Наш менеджер свяжется с вами в ближайшее время.</p>
+                <hr class="my-4">
+                <p class="text-muted">Вы также можете связаться с нами по телефону:</p>
+                <h4 style="color: #8B1A1A;">+7 (4822) 50-90-14</h4>
+                <div class="mt-4">
+                    <a href="/" class="btn btn-primary">Вернуться на главную</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
