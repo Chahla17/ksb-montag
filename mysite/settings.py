@@ -108,10 +108,12 @@ DEFAULT_FROM_EMAIL = 'ehedz@mail.ru'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+# Добавьте это в конец settings.py
 CSRF_TRUSTED_ORIGINS = [
     'https://*.tw1.ru',
     'http://*.tw1.ru',
     'https://*.tmweb.ru',
     'http://*.tmweb.ru',
+    'https://ksb-montag.ru',
+    'http://ksb-montag.ru',
 ]
