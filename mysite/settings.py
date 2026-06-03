@@ -117,3 +117,27 @@ CSRF_TRUSTED_ORIGINS = [
     'https://ksb-montag.ru',
     'http://ksb-montag.ru',
 ]
+
+# --- Настройки для работы через прокси Timeweb Cloud ---
+# Доверяем заголовку X-Forwarded-Proto, который приходит от Timeweb
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Учитываем заголовки X-Forwarded
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
+
+# Явно разрешаем домены, с которых приходят запросы
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.twc1.net',
+    'https://*.tw1.ru',
+    'https://*.tmweb.ru',
+    'http://*.twc1.net',
+    'http://*.tw1.ru',
+    'http://*.tmweb.ru',
+]
+
+# Настройки кук, чтобы они корректно работали через прокси
+CSRF_COOKIE_SECURE = False   # Временно для HTTP, если HTTPS еще не везде
+CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SAMESITE = 'Lax'
