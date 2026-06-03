@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
     return render(request, 'main/index.html')
@@ -14,6 +15,7 @@ def contacts(request):
 def thanks(request):
     return render(request, 'main/thanks.html')
 
+@csrf_exempt
 def send_request(request):
     if request.method == 'POST':
         name = request.POST.get('name')
